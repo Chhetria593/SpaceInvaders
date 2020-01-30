@@ -36,6 +36,7 @@ public class SpaceInvaders extends GameSkeleton
 		g.fillRect(0, 0, 600, 600);
 		
 		hero.draw(g);
+		enemy.draw(g);
 		}
 	public void whichKey(int inKey)
 		{ 
