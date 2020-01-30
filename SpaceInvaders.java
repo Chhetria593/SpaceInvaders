@@ -2,6 +2,8 @@
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
+import javax.swing.text.html.parser.Entity;
+
 public class SpaceInvaders extends GameSkeleton 
 	{
 	//declaring variables
@@ -9,9 +11,9 @@ public class SpaceInvaders extends GameSkeleton
 	int xCoordinate;
 	int squareSize;
 	
-	Hero hero = new Hero(300);
-	Enemy enemy = new Enemy();
+	Hero hero = new Hero();
 	Score score = new Score();
+	Enemy enemy = new Enemy();
 	public void start()
 		{ 
 		xCoordinate = 300;
@@ -22,6 +24,7 @@ public class SpaceInvaders extends GameSkeleton
 	public void tick ()
 		{ 
 		squareSize = squareSize + 1;
+		
 		
 		}
 	public void draw(Graphics g) 
