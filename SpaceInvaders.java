@@ -52,11 +52,13 @@ public class SpaceInvaders extends GameSkeleton
 			{
 			xCoordinate = xCoordinate -10;
 			squareSize = squareSize -1;
+			hero.moveL();
 			}
 		if (KeyEvent.VK_RIGHT == inKey)
 			{
 			xCoordinate = xCoordinate + 10;
 			squareSize = squareSize + 1;
+			hero.moveR();
 			}
 	
 		}
