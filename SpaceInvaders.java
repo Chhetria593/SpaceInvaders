@@ -2,7 +2,7 @@
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
-import javax.swing.text.html.parser.Entity;
+
 
 public class SpaceInvaders extends GameSkeleton 
 	{
@@ -14,6 +14,8 @@ public class SpaceInvaders extends GameSkeleton
 	Hero hero = new Hero();
 	Score score = new Score();
 	Enemy enemy = new Enemy();
+	Barrier barrier = new Barrier(); 
+	
 	public void start()
 		{ 
 		xCoordinate = 300;
@@ -37,6 +39,8 @@ public class SpaceInvaders extends GameSkeleton
 		
 		hero.draw(g);
 		enemy.draw(g);
+		score.draw(g);
+		barrier.draw(g);
 		}
 	public void whichKey(int inKey)
 		{ 
@@ -52,12 +56,14 @@ public class SpaceInvaders extends GameSkeleton
 			{
 			xCoordinate = xCoordinate -10;
 			squareSize = squareSize -1;
+			
 			hero.moveL();
 			}
 		if (KeyEvent.VK_RIGHT == inKey)
 			{
 			xCoordinate = xCoordinate + 10;
 			squareSize = squareSize + 1;
+			
 			hero.moveR();
 			}
 	
