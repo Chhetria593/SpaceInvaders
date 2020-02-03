@@ -31,10 +31,10 @@ public class SpaceInvaders extends GameSkeleton
 		}
 	public void draw(Graphics g) 
 		{ 
-		g.setColor(Color.white);
+		g.setColor(Color.black);
 		g.fillRect(0,  0,  this.getWidth(), this.getHeight());
 	
-		g.setColor(Color.yellow);
+		g.setColor(Color.black);
 		g.fillRect(0, 0, 600, 600);
 		
 		hero.draw(g);
