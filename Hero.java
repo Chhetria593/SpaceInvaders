@@ -15,7 +15,7 @@ public class Hero
 	{
 		x=x-20;
 	}
-	public void move()
+	public void moveR()
 	{
 		x=x+20;
 	}
@@ -23,3 +23,5 @@ public class Hero
 	
 }
 }
+
+
