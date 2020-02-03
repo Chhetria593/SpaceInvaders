@@ -8,7 +8,7 @@ public class Hero
 	int y=525;
 	public void draw (Graphics g)
 	{
-	g.setColor(Color.BLACK);
+	g.setColor(Color.blue);
 	g.fillRect(x,y,40,40);
 	}
 	public void moveL()
@@ -23,5 +23,6 @@ public class Hero
 	
 }
 }
+
 
 
