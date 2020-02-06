@@ -10,6 +10,7 @@ public class SpaceInvaders extends GameSkeleton
 	static final long serialVersionUID = 0;
 	int xCoordinate;
 	int squareSize;
+	static int count=0;
 	
 	Hero hero = new Hero();
 	Score score = new Score();
@@ -26,9 +27,17 @@ public class SpaceInvaders extends GameSkeleton
 	public void tick ()
 		{ 
 		squareSize = squareSize + 1;
-		
-		
-		}
+		if(count>=0)
+			{
+			count++;
+			System.out.println(count);
+			}
+		if(count>=10)
+			{
+			count=0;
+			System.out.println(count);
+			}
+
 	public void draw(Graphics g) 
 		{ 
 		g.setColor(Color.black);
