@@ -2,12 +2,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 public class Score {
-	int Score;
-
-public void start()
-{
-	Score = 0;
-}
+	int Score = 0;
 
 public void draw(Graphics g)
 {
